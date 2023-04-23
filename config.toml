@@ -1,11 +1,11 @@
 # The base URL of the site.
-base_url = "https://www.gersonb.dev/"
+base_url = "https://jackyliu16.github.io"
 
 # To avoid problems with some variables due to multilingual support,
 # you will find repeated variables in the language section,
 # it is recommended that you keep those of your language and the general
 # ones with the same data.
-default_language = "es"
+default_language = "en"
 theme = "ataraxia"
 
 # To find a detailed description of the following configuration variables
@@ -27,7 +27,7 @@ hard_link_static = false
 
 
 [extra]
-    author = "Gerson Benavides"
+    author = "jackyliu16"
 
     # Use a square image (same height as width)
     avatar = "images/avatar.png"
@@ -41,22 +41,22 @@ hard_link_static = false
     # you can go to https://icons.getbootstrap.com/ to find the full list
     [extra.menus]
         nav = [
-            { name = "Inicio", url = "@/_index.md", icon = "bi-house" },
+            { name = "Main", url = "@/_index.md", icon = "bi-house" },
             { name = "Blog", url = "@/blog/_index.md", icon = "bi-file-earmark-text" },
-            { name = "Proyectos", url = "@/projects/_index.md", icon = "bi-terminal" },
-            { name = "Categorías", url = "https://www.gersonb.dev/categories", icon = "bi-bookmarks" }
+            { name = "Projects", url = "@/projects/_index.md", icon = "bi-terminal" },
+            #TODO { name = "Tags", url = "https://www.gersonb.dev/categories", icon = "bi-bookmarks" }
         ]
     
     [extra.social]
-        author_link = "https://www.gersonb.dev/"
+        author_link = "https://github.com/jackyliu16"
         twitter = "@gersonbdev"
         links = [
-            { name = "Email", url = "mailto:gersonbdev@gmail.com", icon = "bi-envelope-fill" },
-            { name = "GitHub", url = "https://github.com/gersonbenavides", icon = "bi-github" },
-            { name = "LinkedIn", url = "https://www.linkedin.com/in/gersonbenavides/", icon = "bi-linkedin" },
-            { name = "Twitter", url = "https://twitter.com/gersonbdev", icon = "bi-twitter" },
-            { name = "Facebook", url = "https://www.facebook.com/gersonbdev/", icon = "bi-facebook" },
-            { name = "Instagram", url = "https://www.instagram.com/gersonbdev/", icon = "bi-instagram" }
+            { name = "Email", url = "onedragon424@foxmail.com", icon = "bi-envelope-fill" },
+            { name = "GitHub", url = "https://github.com/jackyliu16", icon = "bi-github" },
+            # { name = "LinkedIn", url = "https://www.linkedin.com/in/gersonbenavides/", icon = "bi-linkedin" },
+            # { name = "Twitter", url = "https://twitter.com/gersonbdev", icon = "bi-twitter" },
+            # { name = "Facebook", url = "https://www.facebook.com/gersonbdev/", icon = "bi-facebook" },
+            # { name = "Instagram", url = "https://www.instagram.com/gersonbdev/", icon = "bi-instagram" }
         ]
 
     [extra.seo]
@@ -71,19 +71,9 @@ hard_link_static = false
 
 
 [languages]
-    # [languages.en]
-    #     title = "Website name"
-    #     description = "Website Description"
-    #     generate_feed = true
-    #     feed_filename = "atom.xml"
-    #     taxonomies = [
-    #         { name = "tags", feed = true, paginate_by = 5  },
-    #         { name = "categories", feed = true, paginate_by = 5 }
-    #     ]
-
-    [languages.es]
-        title = "Gerson's website"
-        description = "Proyectos, opinión, tecnología y más"
+    [languages.en]
+        title = "jackyliu16's website"
+        description = "Projects, ideas, technologies"
         generate_feed = true
         feed_filename = "atom.xml"
         taxonomies = [
@@ -91,55 +81,64 @@ hard_link_static = false
             { name = "categories", feed = true, paginate_by = 5 }
         ]
 
+    [languages.en.translations]
+        post = "Post"
+        category = "Category"
+        tag = "Tag"
+        search = "Search"
 
-    # [languages.en.translations]
-    #     post = "Post"
-    #     category = "Category"
-    #     tag = "Tag"
-    #     search = "Search"
+        404_message = "Page not found"
 
-    #     404_message = "Page not found"
+        by = "By"
+        posted = "Posted"
+        updated = "Updated"
+        categories = "Categories"
+        tags = "Tags"
+        share = "Share"
+      
+        next = "Next"
+        previous = "Previous"
 
-    #     by = "By"
-    #     posted = "Posted"
-    #     updated = "Updated"
-    #     categories = "Categories"
-    #     tags = "Tags"
-    #     share = "Share"
-        
-    #     next = "Next"
-    #     previous = "Previous"
-
-    #     short_copyright = "Some rights reserved."
-    #     full_copyright = """\
-    #         Except where otherwise noted, the blog posts on this site are \
-    #         licensed under the Creative Commons Attribution 4.0 International \
-    #         (CC BY 4.0) License by the author.\
-    #         """
-
-    [languages.es.translations]
-        post = "Entrada"
-        category = "Categoría"
-        tag = "Etiqueta"
-        search = "Buscar"
-
-        404_message = "Página no encontrada"
-
-        by = "Por"
-        posted = "Publicado"
-        updated = "Actualizado"
-        categories = "Categorías"
-        tags = "Etiquetas"
-        share = "Compartir"
-        
-        next = "Siguiente"
-        previous = "Anterior"
-        
-        short_copyright = "Algunos derechos reservados."
+        short_copyright = "Some rights reserved."
         full_copyright = """\
-            Salvo que se indique explícitamente, las entradas de este blog \
-            están licenciadas bajo la Creative Commons Attribution 4.0 \
-            International (CC BY 4.0) License por el autor.\
+            Except where otherwise noted, the blog posts on this site are \
+            licensed under the Creative Commons Attribution 4.0 International \
+            (CC BY 4.0) License by the author.\
+            """
+
+    [languages.zh]
+        title = "刘某人的记录小站"
+        description = "项目，意见，技术等"
+        generate_feed = true
+        feed_filename = "atom.xml"
+        taxonomies = [
+            { name = "tags", feed = true, paginate_by = 5  },
+            { name = "categories", feed = true, paginate_by = 5 }
+        ]
+
+    [languages.zh.translations]
+        post = "Post"
+        category = "Category"
+        tag = "Tag"
+        search = "Search"
+
+        404_message = "Page not found"
+
+        by = "By"
+        posted = "Posted"
+        updated = "Updated"
+        categories = "Categories"
+        tags = "Tags"
+        share = "Share"
+      
+        next = "Next"
+        previous = "Previous"
+
+        short_copyright = "Some rights reserved."
+        full_copyright = """\
+            Except where otherwise noted, the blog posts on this site are \
+            licensed under the Creative Commons Attribution 4.0 International \
+            (CC BY 4.0) License by the author.\
             """
 
 

@@ -3,7 +3,7 @@ date = "2022-08-15T22:24:00-05:00"
 title = "Hola mundo"
 description = "Primera publicación del sitio web."
 slug = "hola-mundo"
-draft = false
+draft = true
 
 [taxonomies]
     categories = ["news"]
