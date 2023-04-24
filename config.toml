@@ -150,11 +150,11 @@ hard_link_static = false
     render_emoji = true
 
 
-    external_links_target_blank = true
-    external_links_no_follow = true
-    external_links_no_referrer = true
+    external_links_target_blank = true  # Whether external links are to be opened in a new tab
+    external_links_no_follow = true     # Whether to set rel="nofollow" for all external links
+    external_links_no_referrer = true   # Whether to set rel="noreferrer" for all external links
 
-    smart_punctuation = false
+    smart_punctuation = false           # Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
 
 
 [search]
@@ -166,7 +166,9 @@ hard_link_static = false
 
 
 [link_checker]
+    # Skip link checking for external URLs that start with these prefixes
     # skip_prefixes = []
+    # Skip anchor checking for external URLs that start with these prefixes
     # skip_anchor_prefixes = []
 
     internal_level = "error"
@@ -177,3 +179,6 @@ hard_link_static = false
     paths = "on"
     taxonomies = "on"
     anchors = "on"
+
+    # When true, content/posts/2016-10-08_a-post-with-dates.md => posts/2016-10-08-a-post-with-dates
+    paths_keep_dates = false
