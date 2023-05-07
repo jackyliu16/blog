@@ -1,0 +1,2 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QNixpkgs\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTrying to make a package of rubick\\E$"}
