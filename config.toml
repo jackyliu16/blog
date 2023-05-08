@@ -44,7 +44,7 @@ hard_link_static = false
             { name = "Main", url = "@/_index.md", icon = "bi-house" },
             { name = "Blog", url = "@/blog/_index.md", icon = "bi-file-earmark-text" },
             { name = "Projects", url = "@/projects/_index.md", icon = "bi-terminal" },
-            #TODO { name = "Tags", url = "https://www.gersonb.dev/categories", icon = "bi-bookmarks" }
+            { name = "Tags", url = "tags", icon = "bi-bookmarks" }
         ]
     
     [extra.social]
