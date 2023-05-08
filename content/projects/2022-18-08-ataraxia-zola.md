@@ -3,7 +3,7 @@ date = "2022-08-14T00:00:00-05:00"
 title = "Ataraxia Zola"
 description = "A personal theme focused on ease of reading."
 slug = "ataraxia-zola"
-draft = false
+draft = true 
 
 [taxonomies]
     categories = ["projects"]
