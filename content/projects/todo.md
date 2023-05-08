@@ -1,6 +1,11 @@
 +++
 title = "Todo List"
 date = 2023-05-08
+draft = false
+
+
+[taxonomies]
+    categories = ["projects"]
 +++
 
 ### NixOS
