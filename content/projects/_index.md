@@ -1,6 +1,6 @@
 +++
-title = "Proyectos"
-description = "Información de proyectos."
+title = "Individual Blog"
+description = "the personal blog"
 sort_by = "date"
 paginate_by = 5
 template = "section.html"
