@@ -25,6 +25,7 @@ draft = false
 
 1. [ ] Trying to make a package for installing all `nerd-fonts`.
 2. [ ] Trying to make a package of [rubick](https://github.com/rubickCenter/rubick)
+3. [ ] Using [nvfetcher](https://github.com/berberman/nvfetcher) to manager VSC Extension.
 
 ### Course
 
