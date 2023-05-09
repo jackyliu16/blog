@@ -8,6 +8,15 @@ draft = false
     categories = ["projects"]
 +++
 
+### Reading
+
+#### Technique
+
+1. [ ] Site Reliability Engineering: How Google Runs Production Systems 1st Edition
+2. [ ] Debugging Teams: Better Productivity Through Collaboration
+
+#### Others
+
 ### NixOS
 
 1. [ ] Try to use [std](https://github.com/divnix/std) to formatting the flake of NixOS configuration.
