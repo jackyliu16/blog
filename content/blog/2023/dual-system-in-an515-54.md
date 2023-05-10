@@ -30,7 +30,7 @@ When trying to install `Win10` after install `NixOS`， it's unable to enter the
 1. BIOS setup 1:
     1. Keeping press the `F2` button after you press the power button to go into the BIOS.
     2. Enable `F12 Boot Menu`, Disable `Fast Boot` and `Secure Boot`
-2.  your `Multiboot USB` create by `Ventory` or others. [1: Ventory](https://www.uubyte.com/blog/how-to-use-ventoy-to-create-a-multiboot-usb/) [2: YouTube::Ventory](https://www.youtube.com/watch?v=n8dnTmHMlWU)
+2. Insert your `Multiboot USB` create by `Ventory` or others. [1: Ventory](https://www.uubyte.com/blog/how-to-use-ventoy-to-create-a-multiboot-usb/) [2: YouTube::Ventory](https://www.youtube.com/watch?v=n8dnTmHMlWU)
 3. Install Windows first, I guess the problem when you install `NixOS` then install `win10` will failure due to the startup entry. And by the ways, if you want to install another distro, i thought you should keep enough place for you `linux` in SSD. 
 
 Because the default `sata mode` of this compute is `Optane with RAID`, there may case a problem that the `linux` driver couldn't detect the `SSD` correctly, which you couldn't see the `SSD` driver when you using `sudo fdisk -l` or `gprted`. **You have to change you SATA mode into `AHCI` to enable it**. [3: Intel RST makes SSD disappear in Linux](https://superuser.com/questions/1655079/intel-rst-makes-ssd-disappear-in-linux) And because the windows is installed in `Optane with RAID` mode, and only install the drivers for `Optane with RAID`, so if we change the SATA mode into `AHCI` will case a situation that we couldn't boot the `win10`. We have to use `safe mode` to let `win10` automatically install the `AHCI` drivers.
