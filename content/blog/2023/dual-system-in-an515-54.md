@@ -21,7 +21,14 @@ When trying to install `Win10` after install `NixOS`， it's unable to enter the
 
 #### Computer Information
 
-#TODO
+Acer Nitro AN515-55
+BIOS: v2.06
+processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz (8CPUs)
+Memory: 16384 MB RAM
+
+Graphics:
+    Intel(R) UHD Graphics Family
+    NVIDIA GeForce GTX 1650
 
 ### Step By Step Operation
 
@@ -51,23 +58,35 @@ Because the default `sata mode` of this compute is `Optane with RAID`, there may
 
 It shouldn't have any problem if you installed the `NixOS` from the `Graphical ISO image`. [download link](https://nixos.org/download.html).
 
-#TODO unfinish
+When you boot up the `NixOS` after you installed it, the `gurb` should include the `win10` startup entry, if not you can try to add it manually. For others `linux` distro because the OS proper couldn't detect it correctly you should add it manually.
 
+```
+  boot.loader = {
+    systemd-boot = {
+      enable = true;
+      extraEntries = {
+        "UkyinUbuntu.conf" = ''
+          title UkyinUbuntu
+          efi /efi/ubuntu/shimx64.efi
+        '';
+      };
+    };
+    efi.canTouchEfiVariables = true;
+    efi.efiSysMountPoint = "/boot/efi";
+  };
+```
 
+#### Using HDMI as display monitor
 
-
-
-
-
-
+#TODO unfinished: need to wait for the flake change finish.
 
 ### Reference
 
 1. [ How to Use Ventoy to Create a Multiboot USB ](https://www.uubyte.com/blog/how-to-use-ventoy-to-create-a-multiboot-usb/)
 2. [ How to Install Ventoy in Linux 2021 Guide ](https://www.youtube.com/watch?v=n8dnTmHMlWU)
 3. [ Intel RST makes SSD disappear in Linux ](https://superuser.com/questions/1655079/intel-rst-makes-ssd-disappear-in-linux)
-4. [Start your PC in safe mode in Windows](https://support.microsoft.com/en-us/windows/start-your-pc-in-safe-mode-in-windows-92c27cff-db89-8644-1ce4-b3e5e56fe234)
-5. [Switch from RAID to AHCI on Acer Nitro 5 AN515-54](https://community.acer.com/en/discussion/592158/switch-from-raid-to-ahci-on-acer-nitro-5-an515-54)
+4. [ Start your PC in safe mode in Windows ](https://support.microsoft.com/en-us/windows/start-your-pc-in-safe-mode-in-windows-92c27cff-db89-8644-1ce4-b3e5e56fe234)
+5. [ Switch from RAID to AHCI on Acer Nitro 5 AN515-54 ](https://community.acer.com/en/discussion/592158/switch-from-raid-to-ahci-on-acer-nitro-5-an515-54)
 
 ### credibility statement and to-do list  
  
