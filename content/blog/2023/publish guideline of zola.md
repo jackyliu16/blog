@@ -6,6 +6,7 @@ draft = false
 
 [taxonomies]
 tags = ["zola", "guideline"]
+categories = ["tutorials"]
 +++
 
 > At the beginning of the paper, I have to suggest everyone that, you shouldn't write a long issue in GitHub, you should write it down in your computer editor and then just paste it in GitHub, which I have a sad review that I have finish this paper but due to the network connection issue, I lost it.

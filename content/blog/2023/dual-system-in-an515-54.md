@@ -2,8 +2,8 @@
 date = "2023-03-23T23:21:00-05:00"
 title = "NixOS and Windows dual system in AN515-55 machine"
 [taxonomies]
-    categories = ["tutorials"]
-    tags = [ "NixOS" ]
+  categories = ["tutorials"]
+  tags = [ "NixOS" ]
 +++
 
 > This is a tutorial of install `NixOS` and `Win10` in `AN515-54` computer.
