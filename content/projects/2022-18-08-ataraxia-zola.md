@@ -26,11 +26,11 @@ The theme takes visual inspiration from the Chirpy and Neumorphism themes.
 Open a command terminal at your site path and run:
 
 ```bash
-$ cd themes
+cd themes
 ```
 
 ```bash
-$ git clone https://github.com/gersonbenavides/ataraxia-zola.git ataraxia
+git clone https://github.com/gersonbenavides/ataraxia-zola.git ataraxia
 ```
 
 ## Configuration
@@ -69,7 +69,7 @@ page_template = "blog_page.html"
 You can display the result of your website by running:
 
 ```bash
-$ zola serve
+zola serve
 ```
 
 
@@ -80,11 +80,11 @@ By default, the theme comes with all the scss styles already compiled, in such a
 If you want to edit the theme's styles, you'll need to have a [Node.js](https://nodejs.org/) interpreter and a [Sass compiler](https://sass-lang.com/install) installed. After that, go to the main path of the theme and execute:
 
 ```bash
-$ npm install
+npm install
 ```
 
 ```bash
-$ sass --watch scss/custom.scss:static/assets/css/custom.css
+sass --watch scss/custom.scss:static/assets/css/custom.css
 ```
 
 > Keep in mind that the main branch of this repository only has the stable versions of the theme, if you want to see the development status and the unstable versions, change to the corresponding branch.

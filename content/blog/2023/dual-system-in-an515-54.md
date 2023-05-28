@@ -60,7 +60,7 @@ It shouldn't have any problem if you installed the `NixOS` from the `Graphical I
 
 When you boot up the `NixOS` after you installed it, the `gurb` should include the `win10` startup entry, if not you can try to add it manually. For others `linux` distro because the OS proper couldn't detect it correctly you should add it manually.
 
-```
+```nix
   boot.loader = {
     systemd-boot = {
       enable = true;
