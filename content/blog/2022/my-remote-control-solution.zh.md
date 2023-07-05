@@ -5,8 +5,7 @@ description = "Primera publicación del sitio web."
 draft = false
 
 [taxonomies]
-    categories = ["share"]
-    tags = ["website"]
+  categories = ["record"]
 +++
 
 > 我常会带着被称为“锻炼神器”的游戏本去上课，后来我逐渐厌倦了，想尝试一些新的方案，比如说通过相对较小的终端对于笔记本进行远程控制，其中走了不少弯路，也尝试了一点新的东西，现在简单分享一下我的解决方案供大家参考。
