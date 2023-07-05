@@ -1,7 +1,6 @@
 +++
 date = "2022-08-09"
 title = "Remote Control Solution"
-description = "Primera publicación del sitio web."
 draft = false
 
 [taxonomies]
